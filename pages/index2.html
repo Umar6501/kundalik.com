@@ -1,0 +1,503 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+    <meta name="google" value="notranslate" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description"
+        content="Удобная и безопасная среда общения школьников, учителей и родителей. Домашние задания, расписание, оценки - всё в одном месте.">
+    </meta>
+    <!-- <script>
+        function sendMetrika(type, action) {
+            if (document.readyState === 'complete' && window.dnevnik && window.dnevnik.analytics && window.dnevnik.analytics.yandex && window.dnevnik.analytics.yandex.params) {
+                var params = '{"SmartAppBanner": {"1000003220425": { "student": {"' + type + '": {"' + action + '":{}}}}}}';
+                window.dnevnik.analytics.yandex.params(JSON.parse(params));
+            }
+        }    
+    </script> -->
+
+    <link rel="manifest" href="https://emaktab.uz/manifest" />
+    <link rel="icon" href="https://static.emaktab.uz/img/icons/favicon_Uz.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="https://static.emaktab.uz/img/icons/favicon_Uz.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" media="all"
+        href="https://static.emaktab.uz/assets/styles/vendors/emojione/emojione.css?v=f3836152" />
+    <link rel="stylesheet" type="text/css" media="all"
+        href="https://static.emaktab.uz/css/old_sites_blocks.css?v=46d9f43e" />
+    <link rel="stylesheet" type="text/css" media="all"
+        href="https://static.emaktab.uz/css/screen_addition.css?v=8ef3ed13" />
+    <link rel="stylesheet" type="text/css" media="all" href="https://static.emaktab.uz/css/screen.css?v=ec2ea9ec" />
+    <link rel="stylesheet" type="text/css" media="print" href="https://static.emaktab.uz/css/print.css?v=7b825809" />
+    <link rel="stylesheet" type="text/css" media="all"
+        href="https://static.emaktab.uz/client/notifications.css?v=d76e0767" />
+    <link rel="stylesheet" type="text/css" media="all"
+        href="https://static.emaktab.uz/client/discussions.css?v=cad3cd87" />
+    <link rel="stylesheet" type="text/css" media="all"
+        href="https://static.emaktab.uz/client/attachments.css?v=3e1af363" />
+    <link rel="stylesheet" type="text/css" media="all"
+        href="https://static.emaktab.uz/assets/styles/controls/schools/markcomment.css?v=e0ae085f" />
+    <link rel="stylesheet" type="text/css" media="all"
+        href="https://static.emaktab.uz/css/projects/screen.dnevnik.ru.css?v=fca83d8f" />
+
+    <title>
+        Kundalik daftari - eMaktab
+    </title>
+</head>
+
+
+
+<body id="pageAuth">
+    <div class="page-header ">
+        <div class="page-header__panel-wrapper">
+            <div class="page-header__panel">
+                <div class="page-header__panel-container">
+                    <a href="https://emaktab.uz/userfeed/" title="eMaktab bosh sahifasiga"
+                        class="header-logotype header-logotype_uz"></a>
+
+
+                    <div class="user-counters">
+
+                        <a class="button-with-counter button-with-counter_message button-with-counter_first trackable ya-metrika-trackable"
+                            data-category="Шапка" data-action="ЛС" data-target="messenger">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" viewBox="0 0 23 22">
+                                <path fill="#AAB6C2" fill-rule="evenodd"
+                                    d="M7.293.25c2.873 0 5.368 1.915 6.213 4.66l.07.244-1.449.387C11.532 3.313 9.562 1.75 7.293 1.75c-2.77 0-5.019 2.31-5.019 5.176 0 1.05.3 2.048.853 2.89a.75.75 0 0 1 .113.531c-.099.618-.34 1.192-.694 1.68l-.055.068.052-.001a1.73 1.73 0 0 0 1.038-.484l.117-.124a.75.75 0 0 1 .97-.146c.313.198.65.36 1.005.484l.27.086-.415 1.442a6.509 6.509 0 0 1-.861-.315L4.38 12.9l-.133.102a3.217 3.217 0 0 1-1.669.593l-.204.007c-.648 0-1.267-.19-1.792-.542a.75.75 0 0 1 .04-1.271 2.352 2.352 0 0 0 1.055-1.331l.025-.094-.135-.24a6.758 6.758 0 0 1-.786-2.89l-.007-.308C.774 3.24 3.686.25 7.293.25zm14.345 13.802c0 1.218-.313 2.391-.897 3.425l-.134.225.024.081c.178.564.549 1.051 1.048 1.378l.153.093a.75.75 0 0 1 .037 1.286 3.564 3.564 0 0 1-1.92.559c-.81 0-1.576-.27-2.19-.748l-.021-.017-.065.035a7.148 7.148 0 0 1-2.83.722l-.333.008c-3.935 0-7.128-3.152-7.128-7.047 0-3.894 3.193-7.046 7.128-7.046s7.128 3.152 7.128 7.046zm-12.756 0c0 3.062 2.517 5.547 5.628 5.547 1.06 0 2.073-.288 2.952-.824a.75.75 0 0 1 .951.142c.383.43.936.682 1.532.681l-.053-.062a4.056 4.056 0 0 1-.78-1.625l-.044-.227a.75.75 0 0 1 .12-.547c.616-.902.95-1.968.95-3.085 0-3.06-2.517-5.546-5.628-5.546-3.11 0-5.628 2.485-5.628 5.546z" />
+                            </svg>
+                            <div class="button-with-counter__counter"></div>
+                        </a>
+
+                        <a class="button-with-counter  button-with-counter_notification trackable ya-metrika-trackable"
+                            data-category="Шапка" data-action="Инвайты" data-target="invites">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" viewBox="0 0 23 22">
+                                <path fill="#AAB6C2" fill-rule="evenodd"
+                                    d="M4.429 7.861v.968a7.545 7.545 0 0 1-1.44 4.428l-.907 1.249.097.044c.137.06.293.124.472.189l.185.065c1.364.467 3.228.752 5.664.752 2.436 0 4.3-.285 5.664-.752.257-.088.475-.174.657-.254l.096-.044-.905-1.249a7.545 7.545 0 0 1-1.434-4.11l-.007-.318v-.968c0-2.207-1.82-4-4.071-4-2.251 0-4.071 1.793-4.071 4zM8.5 1.75c-.42 0-.765.29-.841.673a5.685 5.685 0 0 1 1.683 0A.849.849 0 0 0 8.5 1.75zm0 18.076c-1.751 0-3.2-1.3-3.404-2.98-1.052-.144-1.964-.355-2.746-.623-.962-.33-1.559-.678-1.853-.945a.75.75 0 0 1-.104-.996l1.381-1.905A6.045 6.045 0 0 0 2.93 8.829v-.968c0-2.207 1.316-4.109 3.214-4.985v-.293A2.343 2.343 0 0 1 8.5.25c1.247 0 2.269.956 2.352 2.173l.005.16v.293c1.898.876 3.214 2.778 3.214 4.985v.968c0 1.272.404 2.512 1.155 3.548l1.381 1.905a.75.75 0 0 1-.104.996c-.294.267-.89.616-1.853.945-.782.268-1.694.48-2.746.622-.204 1.681-1.653 2.981-3.404 2.981zm0-1.5c.866 0 1.598-.56 1.842-1.327-.58.037-1.193.057-1.842.057-.65 0-1.263-.02-1.842-.057A1.926 1.926 0 0 0 8.5 18.326z" />
+                            </svg>
+                            <div class="button-with-counter__counter"></div>
+                        </a>
+
+                        <div class="ntf-notifications-container">
+                            <div id="ntf-notifications-root"></div>
+                            <div class="ntf-notifications-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 18 18">
+                                    <g>
+                                        <g>
+                                            <path fill="#aab6c2"
+                                                d="M11.71 4.522c-.5-1.284-1.198-2.212-1.96-2.588v3.014a8.172 8.172 0 0 0 1.96-.426zm-5.424.009a8.186 8.186 0 0 0 1.964.42V1.934c-.764.377-1.463 1.308-1.964 2.597zm.01 8.963c.5 1.276 1.195 2.198 1.954 2.572v-2.989a8.19 8.19 0 0 0-1.954.417zm5.405.009a8.176 8.176 0 0 0-1.951-.423v2.986c.757-.374 1.451-1.292 1.95-2.563zM5.848 5.968a13.217 13.217 0 0 0-.314 2.282H8.25V6.456a9.663 9.663 0 0 1-2.402-.488zm6.302-.01a9.65 9.65 0 0 1-2.4.496V8.25h2.716a13.212 13.212 0 0 0-.316-2.291zm-.007 6.11c.168-.715.28-1.494.323-2.318H9.75v1.824a9.652 9.652 0 0 1 2.393.494zm-6.289-.01a9.665 9.665 0 0 1 2.396-.486V9.75H5.534c.043.82.154 1.597.32 2.309zM17.75 9A8.75 8.75 0 1 1 .25 9a8.75 8.75 0 1 1 17.5 0zm-5.298-6.377c.225.376.429.79.609 1.234.208-.14.394-.291.553-.45a7.263 7.263 0 0 0-1.162-.784zm0 12.754c.408-.221.791-.48 1.147-.772a3.867 3.867 0 0 0-.547-.44 8.967 8.967 0 0 1-.6 1.212zm1.082-2.677c.423.247.801.529 1.119.84a7.216 7.216 0 0 0 1.559-3.79h-2.244a14.54 14.54 0 0 1-.434 2.95zm1.132-8.224c-.32.314-.7.599-1.126.849.232.905.38 1.891.428 2.925h2.244a7.215 7.215 0 0 0-1.546-3.774zM5.548 2.623c-.42.228-.814.495-1.178.797.163.16.352.31.563.452.182-.45.387-.868.615-1.249zm0 12.754a8.982 8.982 0 0 1-.606-1.226 3.914 3.914 0 0 0-.556.442c.36.297.749.56 1.162.784zM4.456 5.339a5.74 5.74 0 0 1-1.134-.848A7.215 7.215 0 0 0 1.788 8.25h2.244c.048-1.028.194-2.01.424-2.911zm-1.121 8.185a5.76 5.76 0 0 1 1.127-.838 14.548 14.548 0 0 1-.43-2.936H1.788a7.215 7.215 0 0 0 1.547 3.774z" />
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+
+                    </div>
+                    <link rel="stylesheet" href="https://static.emaktab.uz/client/chat_notifications.css?v=893f4a26"
+                        media="all" type="text/css">
+                    </link>
+
+                </div>
+                <div class="page-header__panel-container_items">
+
+                    <div class="page-header__panel-container page-header__panel-container_localization-select">
+
+
+                        <div class="header-localization-select header-localization-select_top">
+                            <div class="header-localization-select__info">
+                                <div
+                                    class="header-localization-select__info_row header-localization-select__info_row-content">
+                                    O'zb</div>
+                                <div class="header-localization-select__info_row header-localization-select__tumbler">
+                                </div>
+                            </div>
+
+                            <div
+                                class="header-localization-select_dropdown dropdown-container dropdown-container_font-weight-bold  border: 1px solid black;dropdown-container_left-position-0 dropdown-container_no-specific-last-child">
+
+                                <a href="https://emaktab.uz/api/localization/change?newCulture=uz-Latn-UZ&currentUrl=http%3a%2f%2fschools.emaktab.uz%2fmarks.aspx%3fschool%3d1000001905810%26tab%3dweek"
+                                    title=""
+                                    class="link link_dropdown-container-link link_dropdown-container-link_bold link_dropdown-container-link_selected">
+                                    O‘zbek </a>
+
+                                <a href="https://emaktab.uz/api/localization/change?newCulture=ru-RU&currentUrl=http%3a%2f%2fschools.emaktab.uz%2fmarks.aspx%3fschool%3d1000001905810%26tab%3dweek"
+                                    title=""
+                                    class="link link_dropdown-container-link link_dropdown-container-link_bold ">
+                                    Русский </a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="page-header__panel-container page-header__panel-container_profile">
+
+
+                        <div class="user-profile-box" data-test-id="user-profile-info">
+                            <div class="user-profile-box__info">
+                                <div class="user-profile-box__info_row user-profile-box__avatar">
+                                    <img src="https://static.emaktab.uz/images/avatars/user/a.s.jpg" />
+
+                                </div>
+                                <div class="user-profile-box__info_row user-profile-box__info_row-content">
+                                    <p class="user-profile-box__info_row-content user-profile-box__initials">
+                                        Abduqodirxo&#39;jayev M.J.</p>
+                                    <p class="user-profile-box__info_row-content user-profile-box__category">O‘quvchi
+                                    </p>
+                                </div>
+                                <div class="user-profile-box__info_row user-profile-box__tumbler"></div>
+                            </div>
+
+                            <div class="user-profile-box__dropdown dropdown-container">
+
+                                <a href="https://emaktab.uz/billing/paidAccess/paymentPage" title=""
+                                    class="link link_dropdown-container-link "> Obunalar </a>
+
+                                <a href="https://emaktab.uz/v2/user/settings?user=1000003220425" title=""
+                                    class="link link_dropdown-container-link "> Sozlamalar </a>
+
+                                <a href="https://login.emaktab.uz/logout" title=""
+                                    class="link link_dropdown-container-link " Id="profile_logout"> eMaktab dan chiqish
+                                </a>
+
+                            </div>
+                        </div>
+
+                        <form name="profileLogout" action="https://login.emaktab.uz/logout" method="post">
+                        </form>
+
+                    </div>
+                    <div class="page-header__panel-container page-header__panel-container_end">
+
+
+                        <div class="header-links">
+                            <a class="header-links__link" href="https://help.kundalik.com/hc/ru/"
+                                target="_blank">Yordam</a>
+                            <form name="logout" action="https://login.emaktab.uz/logout" method="post">
+                                <a class="header-links__link" onClick="document.logout.submit();" href="#">
+                                    Chiqish
+                                </a>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clear">
+            <ul class="header-menu">
+                <li class="header-menu__item header-menu__item_active"><a class="header-menu__link"
+                        href="https://emaktab.uz/userfeed" target="_self" title="" data-test-id="Ta'lim">Ta'lim </a>
+                    <ul class="header-submenu header-submenu_active">
+                        <li class="header-submenu__item"><a class="header-submenu__link"
+                                href="https://schools.emaktab.uz/v2/school" title=""
+                                data-test-id="Mening maktabim">Mening maktabim </a></li>
+                        <li class="header-submenu__item"><a class="header-submenu__link"
+                                href="https://schools.emaktab.uz/v2/class" title="" data-test-id="Mening sinfim">Mening
+                                sinfim </a></li>
+                        <li class="header-submenu__item header-submenu__item_active"><a class="header-submenu__link"
+                                href="https://schools.emaktab.uz/marks.aspx" target="_self" title=""
+                                data-test-id="Kundalik">Kundalik </a></li>
+                        <li class="header-submenu__item"><a class="header-submenu__link"
+                                href="https://schools.emaktab.uz/v2/schedules/" title=""
+                                data-test-id="Dars jadvali">Dars jadvali </a></li>
+                        <li class="header-submenu__item"><a class="header-submenu__link"
+                                href="https://schools.emaktab.uz/homework.aspx" title="" data-test-id="Uy vazifasi">Uy
+                                vazifasi </a></li>
+                        <ul class="header-submenu__item header-submenu__more-item">
+                            <div class="header-submenu__more-item-name">Yana</div>
+                        </ul>
+                    </ul>
+                </li>
+                <li class="header-menu__item"><a class="header-menu__link" href="https://emaktab.uz/v2/user/user"
+                        title="" data-test-id="Profil">Profil </a>
+                    <ul class="header-submenu">
+                        <li class="header-submenu__item"><a class="header-submenu__link"
+                                href="https://emaktab.uz/soc/messenger/" title="" data-test-id="Xabarlar">Xabarlar </a>
+                        </li>
+                        <li class="header-submenu__item"><a class="header-submenu__link"
+                                href="https://emaktab.uz/v2/user/user?view=files" title=""
+                                data-test-id="Fayllar">Fayllar </a></li>
+                        <ul class="header-submenu__item header-submenu__more-item">
+                            <div class="header-submenu__more-item-name">Yana</div>
+                        </ul>
+                    </ul>
+                </li>
+                <li class="header-menu__item"><a class="header-menu__link" href="https://emaktab.uz/v2/soc/networks"
+                        title="" data-test-id="Muloqot">Muloqot </a>
+                    <ul class="header-submenu">
+                        <li class="header-submenu__item"><a class="header-submenu__link"
+                                href="https://emaktab.uz/v2/soc/networks" title="" data-test-id="Tarmoqlar">Tarmoqlar
+                            </a></li>
+                        <ul class="header-submenu__item header-submenu__more-item">
+                            <div class="header-submenu__more-item-name">Yana</div>
+                        </ul>
+                    </ul>
+                </li>
+                <li class="header-menu__item"><a class="header-menu__link"
+                        href="https://emaktab.uz:443/soc/apps/?utm_source=dnevnik&utm_medium=mainnav&utm_campaign=button"
+                        title="" data-test-id="Ilovalar">Ilovalar </a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="page-wrapper" id="contentWrapper">
+        <div id="content">
+            <ul class="crumbs">
+                <li><a href="#" title="Maktab sahifasi">Kosonsoy
+                        tumani 13-maktab</a></li>
+                <li><em>&gt;</em><a href="#" title="Kundalik daftari">Kundalik daftari</a></li>
+            </ul>
+
+            <h2>Abduqodirxo'jayev Muhammadbobur Javlonxo'ja O'g'li</h2>
+
+            <div id="errors" class="errors" style="display:none;">
+                <div class="rounded">
+                    <div class="c1">
+                        <div class="c2"></div>
+                    </div>
+                    <div class="cc">
+                    </div>
+                    <div class="c3">
+                        <div class="c4"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="player">
+
+                <h3>8-D (2023/2024)</h3>
+                <ul class="filter">
+                    <li class="active first link"><a href="#" innerhtml="Joriy sinf" href="#">Joriy
+                            sinf</a></li>
+                </ul>
+            </div>
+
+
+            <div class="floatLeft">
+
+            </div>
+
+            <span class="u" style="float: right; margin-top: -15px; font-style: italic;">Sahifa ko‘rilgan oxirgi davr:
+                <a href="https://emaktab.uz/v2/user/user?user=1000003430878">Abdulxayev J.A.</a> (Ota), Chor, 11 Noy 20
+                v 20:44</span>
+
+            <div class="actions">
+                <a href="javascript:void(0);" class="checkcolor" title="Qora oq jurnal">
+                    <img src="https://static.emaktab.uz/images/icons/32/colorfill_gray.png" width="32" height="32"
+                        alt="" />
+                </a>
+            </div>
+
+
+            <div class="tabs">
+                <ul>
+                    <li class="active  ">
+                        <div class="tc1"></div>
+                        <div class="tc2"></div><a id="TabWeek" class="NotSet" style="color: rgb(117, 117, 117);"
+                            href="../index.html">Kundalik</a>
+                    </li>
+                    <li>
+                        <div class="tc1"></div>
+                        <div class="tc2"></div><a id="TabStats" style="color: darkgray;" class="NotSet   "
+                            href="#">Statistika</a>
+                    </li>
+                    <li>
+                        <div class="tc1"></div>
+                        <div class="tc2"></div><a id="TabSubject" style="color: darkgray;" class="NotSet   "
+                            href="#">Fanlar
+                            bo‘yicha</a>
+                    </li>
+                    <li>
+                        <div class="tc1"></div>
+                        <div class="tc2"></div><a id="TabPeriod" style="color: darkgray;" class="NotSet   "
+                            href="#">Choraklar
+                            bo‘yicha</a>
+                    </li>
+                    <li>
+                        <div class="tc1"></div>
+                        <div class="tc2"></div><a id="TabResultMarks" style="" class="NotSet   " href="#">Xulosa</a>
+                    </li>
+                    <li>
+                        <div class="tabNoCornerLeft"></div>
+                        <div class="tabNoCornerRight"></div>
+                        <a id="TabRating" style="color: white; background-color: aliceblue;"
+                            class="NotSet  TabRating_orange-old " href="#">Sinfdagi
+                            reyting</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="xulosa"></div>
+            <div class=""
+                style="display: flex; align-items: center; justify-content: space-between; flex-direction: row;">
+                <h1 style="font-family: sans-serif; font-size: 20px; color: black;">⟨ 2023/2024 (11-Е) ⟩</2023>
+                </h1>
+                <nav style="">
+                    <ul
+                        style="display: flex; align-items: center; justify-content: center; flex-direction: row; gap: 9px; border: 1px solid rgb(109, 109, 109); border-radius: 25px; height: 32px; padding: 0 12px;">
+                        <li class="page-item disabled">
+                            <a class="page-link">Previous</a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">Next</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <table
+                style="display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 19px; margin-top: 20px; ">
+                <tr style="display: flex; gap: 35px;">
+                    <th
+                        style="font-size: 23px; font-family: sans-serif; font-style: normal; font-weight: 200; border: 1px solid black;">
+                        Предмет
+                    </th>
+                    <th
+                        style="font-size: 23px; font-family: sans-serif; font-style: normal; font-weight: 200; border: 1px solid black;">
+                        1 чтв
+                    </th>
+                    <th
+                        style="font-size: 23px; font-family: sans-serif; font-style: normal; font-weight: 200; border: 1px solid black;">
+                        2 чтв
+                    </th>
+                    <th
+                        style="font-size: 23px; font-family: sans-serif; font-style: normal; font-weight: 200; border: 1px solid black;">
+                        1 п/г
+                    </th>
+                    <th
+                        style="font-size: 23px; font-family: sans-serif; font-style: normal; font-weight: 200; border: 1px solid black;">
+                        3 чтв
+                    </th>
+                    <th
+                        style="font-size: 23px; font-family: sans-serif; font-style: normal; font-weight: 200; border: 1px solid black;">
+                        3 чтв
+                    </th>
+                    <th
+                        style="font-size: 23px; font-family: sans-serif; font-style: normal; font-weight: 200; border: 1px solid black;">
+                        2 п/г
+                    </th>
+                    <th
+                        style="font-size: 23px; font-family: sans-serif; font-style: normal; font-weight: 200; border: 1px solid black;">
+                        Год</th>
+                    <th
+                        style="font-size: 23px; font-family: sans-serif; font-style: normal; font-weight: 200; border: 1px solid black;">
+                        Экзамен
+                    </th>
+                    <th
+                        style="font-size: 23px; font-family: sans-serif; font-style: normal; font-weight: 200; border: 1px solid black;">
+                        Итог
+                    </th>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+    </div>
+    <div class="page-footer page-footer_auth" id="footer">
+        <div class="page-footer__banner">
+
+
+        </div>
+        <div class="page-footer__content">
+
+            <div class="page-footer__menu-layout page-footer__menu-layout_sized">
+
+                <ul class="page-footer__menu">
+                    <li class="page-footer__menu-item">
+                        <a href="https://emaktab.uz/about" title="eMaktab haqida batafsilroq ma'lumot "
+                            class="page-footer__menu-link">Loyiha haqida</a>
+                    </li>
+                    <li class="page-footer__menu-item">
+                        <a href="https://emaktab.uz/news" title="Matbuot xonasi"
+                            class="page-footer__menu-link">Yangiliklar </a>
+                    </li>
+                    <li class="page-footer__menu-item">
+                        <a href="https://help.kundalik.com/" target="_blank" title="Qo‘llab-quvvatlash xizmati"
+                            class="page-footer__menu-link page-footer__menu-link_support">Yordam</a>
+                    </li>
+                    <li class="page-footer__menu-item">
+                        <a href="https://emaktab.uz/contacts" title="Qo‘llab-quvvatlash xizmati"
+                            class="page-footer__menu-link">Aloqa ma'lumotlari</a>
+                    </li>
+                </ul>
+
+                <ul class="page-footer__social">
+
+                    <li class="page-footer__social-item">
+                        <a href="https://www.facebook.com/emaktabUZ" title="Facebook da eMaktab"
+                            class="page-footer__social-link page-footer__social-link_facebook" target="_blank">
+                        </a>
+                    </li>
+
+                    <li class="page-footer__social-item">
+                        <a href="https://instagram.com/e_maktab.uz" title="Instagram da eMaktab"
+                            class="page-footer__social-link page-footer__social-link_instagram" target="_blank">
+                        </a>
+                    </li>
+
+                    <li class="page-footer__social-item">
+                        <a href="https://t.me/emaktab_uz" title="Telegram da eMaktab"
+                            class="page-footer__social-link page-footer__social-link_telegram" target="_blank">
+                        </a>
+                    </li>
+
+                    <li class="page-footer__social-item">
+                        <a href="https://www.youtube.com/@e-Maktab" title="YouTube da eMaktab"
+                            class="page-footer__social-link page-footer__social-link_youtube" target="_blank">
+                        </a>
+                    </li>
+
+                </ul>
+
+                <div class="page-footer__statistics">
+
+                </div>
+            </div>
+
+
+            <div class="page-footer__mobile-app-links">
+                <div class="page-footer__mobile-app-links_header">
+                    Mobil ilova
+                </div>
+                <div>
+                    <a target="_blank" href="https://apps.apple.com/ru/app/kundalik-family/id1526435440"
+                        class="page-footer__mobile-app-links__badge page-footer__mobile-app-links__badge-appStore">
+                        <img class="page-footer__mobile-app-links__badge_img"
+                            src="https://static.emaktab.uz/images/storebadges/appstore/AppStore_uz-Latn-UZ.svg" />
+                    </a>
+
+                    <a target="_blank" href="https://play.google.com/store/apps/details?id=uz.kundalik.mobile"
+                        class="page-footer__mobile-app-links__badge page-footer__mobile-app-links__badge-googlePlay">
+                        <img class="page-footer__mobile-app-links__badge_img"
+                            src="https://static.emaktab.uz/images/storebadges/googleplay/GooglePlay_uz-Latn-UZ.svg" />
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="page-footer__copyright-layout">
+                <a href="https://emaktab.uz/terms/" class="page-footer__copyright-layout-agreement">Foydalanuvchining
+                    shartnomasi</a>
+                <div class="page-footer__copyright-layout-details">
+
+
+                    <p class="page-footer__copyright-layout__terms">© 2023 ООО «Kundalik» </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="clear"></div>
+
+    <div class="clear"></div>
+
+    </div>
+
+    <noscript>
+        <div><img src="//mc.yandex.ru/watch/52725535" style="position:absolute; left:-9999px;" alt="" /></div>
+    </noscript>
+
+</body>
+
+</html>
